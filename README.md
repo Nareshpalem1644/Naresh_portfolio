@@ -156,14 +156,31 @@ A `Dockerfile` and `nginx.conf` are included. Use **New → Web Service**, set *
 
 ---
 
+## Live site
+
+**https://naresh-portfolio-55wq.onrender.com**
+
+Deployed from `main` as a Render Static Site. Any push to `main` triggers an automatic
+rebuild and redeploy (~15s). You can also redeploy manually from the Render dashboard
+(*Deploys → Manual Deploy → Deploy latest commit*).
+
+Render service settings currently in use:
+
+| Field | Value |
+|---|---|
+| Root Directory | `frontend-app` |
+| Build Command | `npm ci && npm run build` |
+| Publish Directory | `dist` |
+| Branch | `main` |
+
+---
+
 ## After your first deploy
 
-1. **Set your real domain.** In Render → *Settings* → *Environment*, add `VITE_WEBSITE=https://your-render-url.onrender.com`. Then update the same URL in:
-   - `index.html` (`canonical`, `og:url`)
-   - `public/robots.txt`
-   - `public/sitemap.xml`
-
-   Redeploys pick up env changes — trigger one with *Manual Deploy → Deploy latest commit*.
+1. **Domain is already set.** The canonical URL, Open Graph tags, `robots.txt` and
+   `sitemap.xml` all point at the Render URL. If you later attach a custom domain,
+   update `VITE_WEBSITE` (Render → *Environment*) **and** the same URL in `index.html`,
+   `public/robots.txt` and `public/sitemap.xml`, then redeploy.
 
 2. **Replace placeholder content** (see the warning box above).
 

@@ -20,7 +20,7 @@ export const profile = {
   phone: env.VITE_PHONE || '+91 97032 19526',
   phoneRaw: env.VITE_PHONE_RAW || '+919703219526',
   whatsapp: env.VITE_WHATSAPP || '919703219526',
-  website: env.VITE_WEBSITE || 'https://your-domain.com',
+  website: env.VITE_WEBSITE || 'https://naresh-portfolio-55wq.onrender.com',
 
   // Portrait assets (files live in public/images)
   portrait: env.VITE_PORTRAIT || '/images/naresh.jpg',
