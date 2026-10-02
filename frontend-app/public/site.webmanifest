@@ -1,0 +1,23 @@
+{
+  "name": "Naresh Palem — Data Analyst & Power BI Developer",
+  "short_name": "Naresh Palem",
+  "description": "Data Analyst & Power BI Developer with 4+ years building star-schema models, DAX measures and Power BI Service dashboards.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070A",
+  "theme_color": "#05070A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/naresh-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

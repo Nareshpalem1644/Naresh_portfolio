@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="Manufacturing downtime and quality dashboard concept">
+  <defs>
+    <linearGradient id="panel2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1622" />
+      <stop offset="100%" stop-color="#080C13" />
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14B8A6" />
+      <stop offset="100%" stop-color="#2E8DFF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="520" rx="18" fill="url(#panel2)" stroke="#1E2A3A" />
+
+  <!-- title bar -->
+  <circle cx="30" cy="28" r="4.5" fill="#14B8A6" />
+  <circle cx="46" cy="28" r="4.5" fill="#2E8DFF" />
+  <circle cx="62" cy="28" r="4.5" fill="#222C3A" />
+  <text x="86" y="33" font-family="Inter, Segoe UI, sans-serif" font-size="12" fill="#64748B">
+    Line Downtime &amp; Quality · Plant View
+  </text>
+
+  <!-- KPI tiles -->
+  <g>
+    <rect x="28" y="54" width="224" height="80" rx="12" fill="#131C29" stroke="#1E2A3A" />
+    <text x="44" y="77" font-family="Inter, sans-serif" font-size="10" fill="#64748B">MTTR (MEAN TIME TO REPAIR)</text>
+    <text x="44" y="106" font-family="Sora, Inter, sans-serif" font-size="22" font-weight="700" fill="#E6EDF7">42 min</text>
+    <text x="44" y="124" font-family="Inter, sans-serif" font-size="11" fill="#14B8A6">▼ 8 min vs last month</text>
+  </g>
+  <g>
+    <rect x="266" y="54" width="224" height="80" rx="12" fill="#131C29" stroke="#1E2A3A" />
+    <text x="282" y="77" font-family="Inter, sans-serif" font-size="10" fill="#64748B">MTBF (BETWEEN FAILURES)</text>
+    <text x="282" y="106" font-family="Sora, Inter, sans-serif" font-size="22" font-weight="700" fill="#E6EDF7">186 hrs</text>
+    <text x="282" y="124" font-family="Inter, sans-serif" font-size="11" fill="#14B8A6">▲ 14 hrs improvement</text>
+  </g>
+  <g>
+    <rect x="504" y="54" width="268" height="80" rx="12" fill="#131C29" stroke="#1E2A3A" />
+    <text x="520" y="77" font-family="Inter, sans-serif" font-size="10" fill="#64748B">SCRAP RATE</text>
+    <text x="520" y="106" font-family="Sora, Inter, sans-serif" font-size="22" font-weight="700" fill="#E6EDF7">1.9%</text>
+    <text x="520" y="124" font-family="Inter, sans-serif" font-size="11" fill="#14B8A6">▼ 0.6 pts · tracked daily</text>
+  </g>
+
+  <!-- horizontal bars: downtime by reason -->
+  <rect x="28" y="154" width="440" height="238" rx="12" fill="#0C121C" stroke="#1E2A3A" />
+  <text x="44" y="178" font-family="Inter, sans-serif" font-size="11" fill="#94A3B8">Downtime by Reason (hours)</text>
+  <g font-family="Inter, sans-serif" font-size="10" fill="#94A3B8">
+    <text x="44" y="206">Tool change</text>
+    <rect x="130" y="196" width="290" height="12" rx="6" fill="#152030" />
+    <rect x="130" y="196" width="272" height="12" rx="6" fill="#14B8A6" /><text x="410" y="206" fill="#E6EDF7">61</text>
+
+    <text x="44" y="240">Material wait</text>
+    <rect x="130" y="230" width="290" height="12" rx="6" fill="#152030" />
+    <rect x="130" y="230" width="223" height="12" rx="6" fill="#2E8DFF" /><text x="361" y="240" fill="#E6EDF7">50</text>
+
+    <text x="44" y="274">Breakdown</text>
+    <rect x="130" y="264" width="290" height="12" rx="6" fill="#152030" />
+    <rect x="130" y="264" width="174" height="12" rx="6" fill="#7DB6FF" /><text x="312" y="274" fill="#E6EDF7">39</text>
+
+    <text x="44" y="308">Quality hold</text>
+    <rect x="130" y="298" width="290" height="12" rx="6" fill="#152030" />
+    <rect x="130" y="298" width="134" height="12" rx="6" fill="#34D399" /><text x="272" y="308" fill="#E6EDF7">30</text>
+
+    <text x="44" y="342">Operator changeover</text>
+    <rect x="130" y="332" width="290" height="12" rx="6" fill="#152030" />
+    <rect x="130" y="332" width="98" height="12" rx="6" fill="#64748B" /><text x="236" y="342" fill="#E6EDF7">22</text>
+  </g>
+  <line x1="44" y1="360" x2="452" y2="360" stroke="#22303F" />
+
+  <!-- defect table -->
+  <rect x="482" y="154" width="290" height="238" rx="12" fill="#0C121C" stroke="#1E2A3A" />
+  <text x="498" y="178" font-family="Inter, sans-serif" font-size="11" fill="#94A3B8">Defects by Type</text>
+  <g font-family="Inter, sans-serif" font-size="10">
+    <rect x="498" y="190" width="258" height="22" rx="6" fill="#131C29" />
+    <text x="508" y="205" fill="#64748B">TYPE</text>
+    <text x="666" y="205" fill="#64748B">QTY</text>
+    <text x="716" y="205" fill="#64748B">RATE</text>
+
+    <rect x="498" y="218" width="258" height="30" rx="6" fill="#101826" />
+    <text x="508" y="237" fill="#E6EDF7">Dimensional</text><text x="672" y="237" fill="#E6EDF7">128</text><text x="720" y="237" fill="#F87171">3.4%</text>
+
+    <rect x="498" y="252" width="258" height="30" rx="6" fill="#101826" />
+    <text x="508" y="271" fill="#E6EDF7">Surface finish</text><text x="672" y="271" fill="#E6EDF7">96</text><text x="720" y="271" fill="#FBBF24">2.5%</text>
+
+    <rect x="498" y="286" width="258" height="30" rx="6" fill="#101826" />
+    <text x="508" y="305" fill="#E6EDF7">Assembly misfit</text><text x="672" y="305" fill="#E6EDF7">74</text><text x="720" y="305" fill="#FBBF24">1.9%</text>
+
+    <rect x="498" y="320" width="258" height="30" rx="6" fill="#101826" />
+    <text x="508" y="339" fill="#E6EDF7">Weld porosity</text><text x="672" y="339" fill="#E6EDF7">41</text><text x="720" y="339" fill="#34D399">1.1%</text>
+  </g>
+  <g font-family="Inter, sans-serif" font-size="9" fill="#475569">
+    <text x="498" y="374">Shift · Line · Machine filterable</text>
+  </g>
+
+  <!-- bottom: planned vs actual variance -->
+  <rect x="28" y="404" width="744" height="88" rx="12" fill="#0C121C" stroke="#1E2A3A" />
+  <text x="44" y="428" font-family="Inter, sans-serif" font-size="11" fill="#94A3B8">Planned vs Actual Downtime by Shift</text>
+  <g fill="#22303F">
+    <rect x="56" y="440" width="86" height="9" rx="4" />
+    <rect x="56" y="458" width="86" height="9" rx="4" />
+    <rect x="56" y="476" width="86" height="9" rx="4" />
+  </g>
+  <g fill="#14B8A6">
+    <rect x="56" y="440" width="58" height="9" rx="4" />
+    <rect x="56" y="458" width="71" height="9" rx="4" />
+    <rect x="56" y="476" width="64" height="9" rx="4" />
+  </g>
+  <g fill="#2E8DFF">
+    <rect x="210" y="440" width="58" height="9" rx="4" />
+    <rect x="210" y="458" width="84" height="9" rx="4" />
+    <rect x="210" y="476" width="49" height="9" rx="4" />
+  </g>
+  <g fill="#7DB6FF">
+    <rect x="364" y="440" width="49" height="9" rx="4" />
+    <rect x="364" y="458" width="62" height="9" rx="4" />
+    <rect x="364" y="476" width="77" height="9" rx="4" />
+  </g>
+  <g font-family="Inter, sans-serif" font-size="9" fill="#475569">
+    <text x="56" y="418">Line A</text>
+    <text x="210" y="418">Line B</text>
+    <text x="364" y="418">Line C</text>
+    <rect x="560" y="440" width="9" height="9" rx="2" fill="#22303F" /><text x="576" y="448">Planned</text>
+    <rect x="560" y="462" width="9" height="9" rx="2" fill="#14B8A6" /><text x="576" y="470">Actual</text>
+  </g>
+</svg>

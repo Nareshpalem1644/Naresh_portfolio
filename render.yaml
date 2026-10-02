@@ -1,0 +1,39 @@
+# ==========================================================================
+#  Render Blueprint — Static site for Naresh Palem's portfolio
+# --------------------------------------------------------------------------
+#  Deploy with:  New  ->  Blueprint  ->  select this repo
+#  Or create manually: New -> Static Site (see README.md)
+# ==========================================================================
+services:
+  - type: web
+    name: naresh-portfolio
+    runtime: static
+    buildCommand: cd frontend-app && npm ci && npm run build
+    staticPublishPath: ./frontend-app/dist
+    envVars:
+      - key: VITE_FULL_NAME
+        value: Naresh Palem
+      - key: VITE_SHORT_NAME
+        value: Naresh
+      - key: VITE_TITLE
+        value: Data Analyst & Power BI Developer
+      - key: VITE_EXPERIENCE_YEARS
+        value: "4+"
+      - key: VITE_CURRENT_COMPANY
+        value: Cognit Analytics Solutions
+      - key: VITE_LOCATION
+        value: Hyderabad, India
+      - key: VITE_EMAIL
+        value: nareshpalem1644@gmail.com
+      - key: VITE_PHONE
+        value: +91 97032 19526
+      - key: VITE_PHONE_RAW
+        value: "+919703219526"
+      - key: VITE_WHATSAPP
+        value: "919703219526"
+      - key: VITE_THEME_PRIMARY
+        value: "#2E8DFF"
+      - key: VITE_THEME_SECONDARY
+        value: "#14B8A6"
+      - key: VITE_THEME_ACCENT
+        value: "#7DB6FF"

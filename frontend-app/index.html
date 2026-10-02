@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05070A" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/images/naresh-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!--
+      SEO tags below are sensible defaults. They are also re-written at runtime
+      from your .env values by src/js/seo.js — so updating .env keeps these in
+      sync without touching markup.
+    -->
+    <title>Naresh Palem — Data Analyst &amp; Power BI Developer</title>
+    <meta
+      name="description"
+      content="Data Analyst &amp; Power BI Developer with 4+ years building star-schema models, advanced DAX measures, Power Query pipelines and Power BI Service dashboards."
+    />
+    <meta name="author" content="Naresh Palem" />
+    <meta
+      name="keywords"
+      content="Data Analyst, Power BI Developer, DAX, Power Query, SQL, Data Modelling, Star Schema, Business Intelligence, Hyderabad"
+    />
+    <link rel="canonical" href="https://your-domain.com" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Naresh Palem — Data Analyst &amp; Power BI Developer" />
+    <meta
+      property="og:description"
+      content="Turning messy operational data into clear, decision-ready dashboards — Power BI models, DAX measures and reports people actually use."
+    />
+    <meta property="og:image" content="/images/naresh-square.jpg" />
+    <meta property="og:url" content="https://your-domain.com" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Naresh Palem — Data Analyst &amp; Power BI Developer" />
+    <meta
+      name="twitter:description"
+      content="Turning messy operational data into clear, decision-ready dashboards — Power BI models, DAX measures and reports people actually use."
+    />
+    <meta name="twitter:image" content="/images/naresh-square.jpg" />
+
+    <!-- Fonts: Sora (headings) + Inter (body) + JetBrains Mono (labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD structured data (also kept in sync by seo.js) -->
+    <script type="application/ld+json" id="ld-json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Naresh Palem",
+        "jobTitle": "Data Analyst & Power BI Developer",
+        "url": "https://your-domain.com"
+      }
+    </script>
+  </head>
+  <body class="bg-ink-900 text-slate-200 font-body antialiased selection:bg-azure-500/30">
+    <!-- Scroll progress indicator -->
+    <div
+      id="scroll-progress"
+      class="fixed top-0 left-0 z-[60] h-[3px] w-0 bg-gradient-to-r from-azure-500 via-azure-400 to-mint-400"
+    ></div>
+
+    <!-- Particle background canvas -->
+    <canvas id="particles" class="fixed inset-0 -z-10 h-full w-full"></canvas>
+
+    <!-- App root — every section is injected here by main.js -->
+    <div id="app"></div>
+
+    <!-- Back to top -->
+    <button
+      id="back-to-top"
+      aria-label="Back to top"
+      class="fixed bottom-6 right-6 z-50 hidden h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-ink-700/70 text-azure-300 shadow-glass backdrop-blur-md transition-all duration-300 hover:border-azure-500/60 hover:text-azure-200 hover:shadow-glow"
+    >
+      <i data-lucide="arrow-up" class="h-5 w-5"></i>
+    </button>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
