@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://naresh-portfolio-55wq.onrender.com/sitemap.xml
+Sitemap: https://naresh-portfolio-pm4f.onrender.com/sitemap.xml

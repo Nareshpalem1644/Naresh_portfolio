@@ -32,7 +32,7 @@ services:
       - key: VITE_WHATSAPP
         value: "919703219526"
       - key: VITE_WEBSITE
-        value: https://naresh-portfolio-55wq.onrender.com
+        value: https://naresh-portfolio-pm4f.onrender.com
       - key: VITE_THEME_PRIMARY
         value: "#2E8DFF"
       - key: VITE_THEME_SECONDARY

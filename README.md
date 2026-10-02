@@ -158,20 +158,35 @@ A `Dockerfile` and `nginx.conf` are included. Use **New → Web Service**, set *
 
 ## Live site
 
-**https://naresh-portfolio-55wq.onrender.com**
+**https://naresh-portfolio-pm4f.onrender.com**
 
-Deployed from `main` as a Render Static Site. Any push to `main` triggers an automatic
-rebuild and redeploy (~15s). You can also redeploy manually from the Render dashboard
-(*Deploys → Manual Deploy → Deploy latest commit*).
+Deployed from `main` as a Render **Web Service** (Docker + nginx). Any push to `main`
+triggers an automatic rebuild and redeploy (~1m20s).
 
 Render service settings currently in use:
 
 | Field | Value |
 |---|---|
+| Runtime | Docker (`frontend-app/Dockerfile`) |
 | Root Directory | `frontend-app` |
-| Build Command | `npm ci && npm run build` |
-| Publish Directory | `dist` |
+| Dockerfile Path | *(default — resolves to `frontend-app/Dockerfile`)* |
 | Branch | `main` |
+| Instance Type | **Free** |
+
+> **Free tier caveat:** Render's free Web Service instances spin down after ~15 minutes
+> of inactivity, so the first visitor after a quiet period waits ~30-60 seconds while
+> the container restarts. If that matters, either attach a custom domain, or go back to
+> a Render **Static Site** (*New → Static Site*, root dir `frontend-app`, build
+> `npm ci && npm run build`, publish `dist`) — static sites never sleep. See
+> `render.yaml` for the Static Site Blueprint.
+
+### About the `-pm4f` suffix
+
+Render appends a random 4-character suffix to the hostname of every newly created
+service, so a bare `naresh-portfolio.onrender.com` cannot be claimed through the
+dashboard. For a clean address you need a **custom domain**
+(*Settings → Custom Domains*), e.g. `nareshpalem.dev`, then update the canonical URL
+as described below.
 
 ---
 
